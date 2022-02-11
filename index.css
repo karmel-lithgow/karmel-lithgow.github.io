@@ -36,6 +36,11 @@ a {
     text-align:center;
 }
 
+li {
+    font-family:'gochi hand',cursive;
+    text-align:left;
+}
+
 a:hover {
     color:rgb(255, 47, 186);
 }
@@ -135,5 +140,4 @@ padding: 20px;
         float:left;
     }
 }
-
 
