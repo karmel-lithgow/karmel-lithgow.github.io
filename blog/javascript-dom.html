@@ -1,0 +1,171 @@
+<html>
+  <style>
+
+    /*the below has imported google fonts*/
+    @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script:wght@400;500&family=Gochi+Hand&display=swap');
+    </style>
+
+  <head>
+    <title> Karmel's Blog </title>
+
+
+    <link href="blog.css" rel="stylesheet" type="text/css">
+
+    
+  </head>
+
+
+  <body>
+
+
+
+    <div">
+      <img src="../Images/GothPandas.jpg" alt="Just some little goth pandas.">
+    </div>
+
+    <div class="header-box">
+    <h1>Javascript and the DOM</h1> 
+    </div>
+
+
+    <div class="lil-explain-box">
+    <h2> Let's learn about Javascript, and it's relation to the Dom</h2>
+
+       
+  </div>
+
+
+
+<div class="float-container">
+
+  <!--start of float-child1-->
+  <div class="float-child1">
+
+<!--Inserting a picture related to the learning of the day-->
+<div class="photo-box">
+ <img src="../Images/javascript.jpeg" alt="A diagram showing the different areas defined by padding, border and margin.">
+ 
+</div>
+
+<div class="blog-link-box">
+  <a href="../index.html"> Home</a> 
+ </div>
+
+ <div class="blog-link-box">
+  <a href="../identity-values.html"> Identity/Values</a> 
+ </div>
+
+ <div class="blog-link-box">
+  <a href="../learning-plan.html"> Learning Plan</a> 
+ </div>
+
+<div class="blog-link-box">
+ <a href="blog1.html"> Blog 1</a> 
+</div>
+
+<div class="blog-link-box">
+  <a href="emotional-intelligence.html"> Emotional Intelligence</a> 
+ </div>
+
+ <div class="blog-link-box">
+    <a href="blog/javascript-dom.html"> Javascript & the Dom</a> 
+   </div>
+
+ <div class="blog-link-box">
+  <a href="Blog4.html"> Blog 4</a> 
+ </div>
+
+ <div class="blog-link-box">
+  <a href="Blog5.html"> Blog 5</a> 
+ </div>
+
+ <div class="blog-link-box">
+  <a href="Blog6.html"> Blog 6</a> 
+ </div>
+
+ <!--close of float-child1-->
+
+
+ <!--start of float-child2-->
+ </div class="float-child2">
+
+    <div class="blog-box">
+      <h3> Blog 3 - Javascript and the Dom</h3>
+      
+      <p><u>Let's discuss the differences between HTML and CSS</u></p>
+
+      <p>HTML and CSS are vital compenents you need to get a webpage working functionally, and beautifully. HTML is in charge of the structure (think the headings, paragraphs, images), while the CSS is what makes all of these elements styled in a way that makes the document unique. This inludes colors, spacing and fonts. It might help you to understand this from a house analogy. Think of HTML as the foundations, the walls, the floor and the ceiling - the elements which make the house stand sturdy and strong. CSS on the other hand is the interior decorating. The wallpaper, the carpet and the way everything is laid out within the home. </p>
+
+      <p> <u>Control flow and loops</u> </p>
+      <p> Control flow is how we refer to the way code is read. simply, it is a top down style whereby it starts to read from the top, and can only execute something when we are calling from items above. ie, we can't console.log (or print to the console) a function which hasn't yet been 'read'. Perhaps you can liken this to a daily routine such as cleaning the cat's litterbox: There is a certain order you must take when cleaning a litterbox. See example below: </p>
+
+    
+      <ol class="kittyLitterList">
+            <li>Remove Poops</li>
+            <li>Shake Litterbox to seperate used litter and fresh litter </li>
+            <li>Remove used wood pellets</li>
+            <li>Wipe down Litterbox for freshness</li>
+            <li>Top up Litterbox with fresh wood pellets</li>
+      </ol> 
+           
+      
+
+     <p>If you look at the litterbox example, you can see that there is a set order which needs to be followed in order for the whole process to be done correctly. If you attempted to do this out of order you would run into issues. You can't remove the used wood pellets portion, without first shaking the litterbox to enable the seperation, or top up the litterbox without removing poops first - It doesn't make sense. Use this logic when thinking of code flow. Things must be done in a certain top down order to allow for all code to be run correctly.</p>       
+
+     <p>Loops build on this idea. Once more look to the litterbox example. This is a task which is done again and again and again. If we were writing this as code, to prevent having to write this out each and every time it needed to be done, we can write a loop. If only this could be done automatically in real life right?</p>
+
+    <p><u>What's the Dom?</u></p>
+    <p>The Document Object Model (DOM) can be thought of as the 'page' it is what we see when we look at a webpage. The DOM breaks down everything into nodes and objects which allows our programming langages such as javascript to interact with and change the look of the page. You can have a lot of fun with this by inspecting any webpage. Right click on the page, and select inspect. All nodes (bascially any of the html or css already present) will appear, and can be manipulated to make visual changes. Eg, try changing the background colour, or edit text to personalise a well known website. Changes made in this method will not be permanent, and will revert back to normal once the page is refreshed.</p>
+
+    <p><u>Arrays and Objects</u></p>
+    <p>In programming we deal with a lot of different data, and we store this data in different ways so we can easily access them for different purposes. Objects are used to represent a single item, person, etc with set unchanging characteristics. Here we have an example of an object in Javascript</p>
+
+    <p>let food= "crackers";</p>
+
+
+    <p>Arrays are used to create and store lists within a single variable. We can use an array to express the shopping list below, everything needed for a fancy night in:</p>
+
+    <p> let shoppingList = ["crackers", "cheese", "pepsi"]</p>
+
+    <p>The above array shoppingList holds the value of 'crackers, cheese and pepsi'. The list can be even longer. </p>
+
+
+    <p><u>Functions</u></p>
+
+    <p>Functions are a set of instructions in Javascript that we can use to run certain tasks as many times as we need to. There are two parts to a function in Javascript. The first is the 'instructions' component, and the second part two is to call the function. Let's look at a basic example</p>
+
+    <p> function goToShops(){
+            alert("Your item is on the way:");
+    }
+    </p>
+
+    <p>
+    goToShops();
+    </p>
+
+
+    <p>The first part of this function provides the name of this function (goToShops) and then followed by what code is to be run when this is called. In this case an alert will pop up with the comment "your item is on the way". To call, or run this set of instructions all we need to do is type "goToShops();". This is an extremly useful tool as it prevents us from having to type out the same set of instructions over and over again. It is brilliant.</p>
+
+    </div>
+
+
+  </div> 
+  
+
+
+<div>
+  <img src="../Images/GothPandas.jpg" alt="Just some little goth pandas.">
+</div>
+
+<p>*A simply stunning design by Karmel Lithgow 2022*</p>
+
+
+  
+  </body>
+
+
+
+
+
+
+</html>
