@@ -157,3 +157,34 @@ padding: 20px;
     }
 }
 
+#penelotree{
+    max-width:10%;
+    max-height:10%;
+}
+
+#penelotree-w-padding{
+    padding: 2%;
+    max-width:10%;
+    max-height:10%;
+    background:aqua;
+}
+
+#penelotree-w-padding-border{
+    border-style: solid;
+    border-color: black;
+    border-width:2%;
+    padding: 2%;
+    max-width:10%;
+    max-height:10%;
+    background:aqua;
+}
+
+
+
+#penelotree-w-padding-border-margin{
+    border-style: solid;
+    border-color: black;
+    border-width:10%; 
+    max-width:20%;
+    max-height: 20%;  
+}
